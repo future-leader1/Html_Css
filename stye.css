@@ -1,8 +1,43 @@
-body {
-  color: grey;
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  color: rgb(0, 0, 0);
   font-family: sans-serif;
-  border-top: #1098ad solid 20px;
+  border-top: #1098ad solid 15px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.main-header {
+  background-color: rgb(228, 232, 227);
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+
+  height: 80px;
+}
+
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: #1098ad solid 5px;
+  border-bottom: #1098ad solid 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 h1,
@@ -14,27 +49,34 @@ li {
 }
 
 h1 {
-  color: rgb(30, 30, 134);
+  color: #1098ad;
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
 }
 
 h2 {
+  padding-top: 20px;
   font-size: 40px;
+  margin-bottom: 20px;
+  color: #1098ad;
 }
 
 h3 {
   font-size: 30px;
-
   text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #1098ad;
+  margin-top: 20px;
 }
 
 h4 {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -49,6 +91,12 @@ footer {
 #author {
   font-style: italic;
   font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.first-img {
+  width: 100%;
+  height: auto;
 }
 
 #copyright {
@@ -64,35 +112,34 @@ footer {
   list-style: none;
 }
 
-.main-header {
-  background-color: rgb(228, 232, 227);
-}
-
 aside {
   background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
+  width: 500px;
 }
 
 li:first-child {
   font-weight: bold;
 }
 
-li:nth-child() {
+li:last-child {
   /* color: red; */
+  margin-bottom: 0;
 }
 
 article p:last-child {
 }
-
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
 /* it is important part and always the same order */
 a {
-  color: aqua;
+  color: #1098ad;
   text-decoration: none;
 }
 
 a:visited {
-  color: aqua;
 }
 
 a:hover {
@@ -104,6 +151,18 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+.text-content {
+  margin-bottom: 20px;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+.html-intro {
+  margin-bottom: 10px;
 }
 
 /* resolving condflict */
@@ -127,7 +186,3 @@ footer p {
 /* * {
   background-color: slategrey !important;
 } */
-
-article {
-  border-top: #1098ad solid 25px;
-}

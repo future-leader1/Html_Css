@@ -1,3 +1,133 @@
-.bolded {
+body {
+  color: grey;
+
+  font-family: sans-serif;
+  border-top: #1098ad solid 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+}
+
+h1 {
+  color: rgb(30, 30, 134);
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 20px;
+}
+li {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+
+  line-height: 1.5;
+}
+
+footer {
+  font-size: 16px;
+}
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 18px;
+}
+
+.related_authors {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.post_related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: rgb(228, 232, 227);
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
   font-weight: bold;
+}
+
+li:nth-child() {
+  /* color: red; */
+}
+
+article p:last-child {
+}
+
+/* it is important part and always the same order */
+a {
+  color: aqua;
+  text-decoration: none;
+}
+
+a:visited {
+  color: aqua;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline cornflowerblue;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* resolving condflict */
+/* 
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
+
+/* * {
+  background-color: slategrey !important;
+} */
+
+article {
+  border-top: #1098ad solid 25px;
 }

@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
 }
-
+/* page sections 
+*/
 body {
   color: rgb(0, 0, 0);
   font-family: sans-serif;
   border-top: #1098ad solid 15px;
+}
+nav {
+  text-align: center;
 }
 
 article {
@@ -24,7 +28,7 @@ article {
 }
 
 .container {
-  width: 700px;
+  width: 800px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -40,6 +44,8 @@ aside {
   padding-right: 0;
 }
 
+/* smller elemets
+*/
 h1,
 h2,
 h3,
@@ -50,7 +56,7 @@ li {
 
 h1 {
   color: #1098ad;
-  font-size: 26px;
+  font-size: 25px;
   text-transform: uppercase;
   font-style: italic;
 }
@@ -60,6 +66,7 @@ h2 {
   font-size: 40px;
   margin-bottom: 20px;
   color: #1098ad;
+  position: relative;
 }
 
 h3 {
@@ -165,7 +172,56 @@ img {
   margin-bottom: 10px;
 }
 
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.like {
+  right: 100px;
+  font-size: 50px;
+  top: 2000px;
+  position: absolute;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h2::first-letter {
+} */
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  right: -25px;
+  position: absolute;
+}
+
 /* resolving condflict */
+
 /* 
 #copyright {
   color: red;
